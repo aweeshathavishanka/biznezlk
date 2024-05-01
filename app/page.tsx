@@ -8,6 +8,7 @@ import BrowseTallent from "./(components)/BrowseTalent";
 import ServiceProviderCTA from "./(components)/ServiceProviderCTA";
 import Blog from "./(components)/Blog";
 import ProviderCTA from "./(components)/ProviderCTA";
+import Footer from "./(components)/Footer";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <ServiceProviderCTA />
         <Blog />
         <ProviderCTA />
+        <Footer />
       </div>
     </main>
   );

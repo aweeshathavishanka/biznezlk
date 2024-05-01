@@ -6,7 +6,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { useState } from "react";
 
-const SignUpPage = () => {
+const LogInPage = () => {
   const [breakdown, setBreakdown] = useState([
     {
       title: "📌 Learn what makes a successful profile",
@@ -35,8 +35,8 @@ const SignUpPage = () => {
         </div>
 
         <div className=" p-10">
-          <h1 className=" text-3xl pb-2">Get Started</h1>
-          <h6 className=" text-md pb-5">Create a new account</h6>
+          <h1 className=" text-3xl pb-2">Welcome Back !</h1>
+          <h6 className=" text-md pb-5">Sign in to your account</h6>
 
           {/* Facebook Login */}
           <div className=" py-3">
@@ -85,6 +85,13 @@ const SignUpPage = () => {
                 <div>
                   <div className=" flex justify-between">
                     <h3 className=" py-2 text-black/60">Password</h3>
+                    <h3 className=" py-2 text-black/60">
+                      <Link
+                        href="/forgot-password"
+                        className=" hover:underline">
+                        Forgot Password
+                      </Link>
+                    </h3>
                   </div>
                   <div>
                     <input
@@ -99,9 +106,9 @@ const SignUpPage = () => {
                     </div>
                     <div className="  ">
                       <h6 className=" w-full py-8 justify-center items-center flex">
-                        Have an account.?
+                        Dont have an account.?
                         <span className=" underline hover:text-blue-600 cursor-pointer">
-                          Sign In Now
+                          Sign Up Now
                         </span>
                       </h6>
                     </div>
@@ -144,4 +151,4 @@ const SignUpPage = () => {
   );
 };
 
-export default SignUpPage;
+export default LogInPage;
